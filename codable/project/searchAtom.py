@@ -5,7 +5,7 @@ Also takes periotic table api
 
 import periodictable as pt
 
-def getAtom(atomNumber: int) -> string, float:
+def getAtom(atomNumber: int):
     """
     Find data for element with atomic number
     args:
@@ -14,5 +14,7 @@ def getAtom(atomNumber: int) -> string, float:
         Returns name of element
         Returns mass of element
     """
-    elem = elements[atomNumber]
+    elem = pt.elements[atomNumber]
     return elem.name, elem.mass
+
+print(getAtom(12))

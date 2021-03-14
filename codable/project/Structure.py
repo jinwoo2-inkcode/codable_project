@@ -4,7 +4,7 @@ create objects and each function for it
 import vpython as vp
 
 #atoms
-def atoms(atomName: string, c: color, size: float, loc: vector) -> atom, vector:
+def atoms(atomName, c, size, loc):
     """
     Creates sphere objects for atoms
     args:
@@ -21,7 +21,7 @@ def atoms(atomName: string, c: color, size: float, loc: vector) -> atom, vector:
     return atom, location
     
 #chains
-def chains(atom1: vector, atom2: vector) -> cylinder:
+def chains(atom1, atom2):
     """
     Creates cylinder objects for chains
     args:

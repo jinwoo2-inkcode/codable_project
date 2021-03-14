@@ -1,8 +1,11 @@
-#import Structure
-import searchAtom
+import Structure as sct
+import searchAtom as sa
+import vpython as vp
 
-#hydrogen, h_loc = atoms("H", color.red, 1, vector(0,0,0))
-#oxygen, o_loc = atoms("O", color.blue, 0.5, vector(2,2,2))
-#h2o = chains(h_loc, o_loc)
+hydrogen, h_loc = sct.atoms("H", vp.color.red, 1, vp.vector(0,0,0))
+oxygen1, o1_loc = sct.atoms("O", vp.color.blue, 0.5, vp.vector(2,2,2))
+oxygen2, o2_loc = sct.atoms("O", vp.color.blue, 0.5, vp.vector(-2,2,2))
+h2o = sct.chains(h_loc, o1_loc)
+h2o = sct.chains(h_loc, o2_loc)
 
-print(getAtom(12))
+print(sa.getAtom(12))
