@@ -19,7 +19,7 @@ def atoms(atomName, c, size, loc):
     atom = vp.sphere(pos=loc, radius=size, color = c)
     location = loc
     return atom, location
-    
+
 #chains
 def chains(atom1, atom2):
     """
@@ -32,3 +32,15 @@ def chains(atom1, atom2):
     """
     chain = vp.cylinder(pos = atom1, axis = atom2-atom1, radius=0.05)
     return chain
+
+#Text Display
+def dataDisplay(data, loc, c):
+    """
+    Displays data as 3D text
+    args:
+        data: text of atom data
+    returns:
+        Creates 3D text within 3D space
+    """
+    atomData = vp.text(text = data, pos = loc, color = c)
+    return atomData

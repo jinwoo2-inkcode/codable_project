@@ -16,5 +16,3 @@ def getAtom(atomNumber: int):
     """
     elem = pt.elements[atomNumber]
     return elem.name, elem.mass
-
-print(getAtom(12))
