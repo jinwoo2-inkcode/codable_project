@@ -1,6 +1,7 @@
 import Structure as sct
 import searchAtom as sa
 import vpython as vp
+import searchCompound as sc
 
 #create water
 oxygen, o_loc = sct.atoms("H", vp.color.red, 1, vp.vector(0,0,0))
@@ -16,4 +17,4 @@ mass = sa.getAtom(1)[1]
 print(name)
 print(mass)
 
-na = sct.dataDisplay(name + '\n' +str(mass), vp.color.white, vp.vector(3,3,3))
+na = sct.dataDisplay(sc.getInfo(2157), vp.color.white, vp.vector(3,3,3))

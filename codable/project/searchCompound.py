@@ -5,8 +5,13 @@ from chemspipy import ChemSpider
 
 cs = ChemSpider('J3XTYvy3MAuYai74BsJBm6krPMOWmtLY')
 
-c = cs.get_compound(2157)
+def getInfo(compound_number):
+    c = cs.get_compound(compound_number)
+    return c.molecular_formula + '\n' + c.smiles + '\n' + c.common_name
 
-print(c.molecular_formula)
-print(c.smiles)
-print(c.common_name)
+
+print(getInfo(2157))
+
+# print(c.molecular_formula)
+# print(c.smiles)
+# print(c.common_name)
