@@ -34,7 +34,7 @@ def chains(atom1, atom2):
     return chain
 
 #Text Display
-def dataDisplay(data, loc, c):
+def dataDisplay(data, c, loc):
     """
     Displays data as 3D text
     args:
@@ -44,3 +44,4 @@ def dataDisplay(data, loc, c):
     """
     atomData = vp.text(text = data, pos = loc, color = c)
     return atomData
+
