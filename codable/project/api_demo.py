@@ -8,5 +8,9 @@ authentication = "vasp?API_KEY="+ API_KEY
 request_string = 'https://www.materialsproject.org/rest/v2/{}/{}/{}'
 temp = requests.get(request_string.format('materials','mp-1234', authentication))
 # print(request_string.format('materials','mp-1234', authentication))
+
+
+#testing
 temp_dict = temp.json()
 pprint(temp_dict)
+#print(temp_dict['elements'])
