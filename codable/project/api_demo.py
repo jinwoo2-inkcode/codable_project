@@ -23,7 +23,7 @@ pprint(temp_dict['response'][0]['elements'])
 pprint(temp_dict['response'][0]['energy'])
 pprint(temp_dict['response'][0]['unit_cell_formula'])
 
-print(len(temp_dict['response'][0]['elements']))
+# print(len(temp_dict['response'][0]['elements']))
 
 
 
