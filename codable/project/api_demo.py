@@ -8,7 +8,7 @@ authentication = "vasp?API_KEY="+ API_KEY
 request_string = 'https://www.materialsproject.org/rest/v2/{}/{}/{}'
 
 #user input compound name
-user_compound_input = input("Enter Compound")
+user_compound_input = input("Enter Compound: ")
 
 #Water Compound
 temp = requests.get(request_string.format('materials',user_compound_input, authentication)) #Find how to format the compound input
@@ -19,9 +19,14 @@ temp_dict = temp.json()
 
 
 #components to display
-pprint(temp_dict['response'][0]['elements'])
-pprint(temp_dict['response'][0]['energy'])
-pprint(temp_dict['response'][0]['unit_cell_formula'])
+# pprint(temp_dict['response'][0]['elements'])
+# pprint(temp_dict['response'][0]['energy'])
+# # pprint(temp_dict['response'][0]['unit_cell_formula'])
+# pprint(temp_dict['response'][0]['band_gap'])
+# pprint(temp_dict['response'][0]['density'])
+# pprint(temp_dict['response'][0]['pretty_formula'])
+
+# pprint(temp_dict['response'][0])
 
 # print(len(temp_dict['response'][0]['elements']))
 

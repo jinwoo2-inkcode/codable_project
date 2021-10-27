@@ -3,6 +3,7 @@ import Structure as sct
 import vpython as vp
 #import searchCompound as sc
 import api_demo as ad
+import os
 
 #create water
 oxygen, o_loc = sct.atoms("O", vp.color.red, 1, vp.vector(0,0,0))
@@ -16,7 +17,10 @@ h2o = sct.chains(o_loc, h2_loc)
 # mass = sa.getAtom(1)[1]
 
 # data = sc.getInfo(2157)
-data = ad.temp_dict['response'][0]['energy'] #only input string, not array
+data = ad.temp_dict['response'][0]['pretty_formula']
+
+
+
 # print(name)
 # print(mass)
 
